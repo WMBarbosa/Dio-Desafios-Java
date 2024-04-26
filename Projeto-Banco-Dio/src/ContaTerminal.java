@@ -17,8 +17,8 @@ public class ContaTerminal {
         ContaBanco conta = new ContaBanco(numeroConta, agencia, nomeCliente, saldo);
 
         System.out.println("Olá ".concat(conta.getNomeCliente()).concat(",")
-                + " obrigado por criar uma conta em nosso banco, sua agência é".concat(" ").concat(conta.getAgencia())
-                + ", conta".concat(" ") + conta.getNumero() + " e seu saldo".concat(" R$") + conta.getSaldo()
-                + " já está disponivel para saque");
+                + " obrigado por criar uma conta em nosso banco, sua agência é".concat(" ")
+                .concat(conta.getAgencia()) + ", conta".concat(" ") + conta.getNumero()
+                + " e seu saldo".concat(" R$") + conta.getSaldo() + " já está disponivel para saque");
     }
 }
