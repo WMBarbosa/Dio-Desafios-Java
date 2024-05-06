@@ -1,4 +1,4 @@
-package Aparelho;
+package Iphone;
 
 public interface ReprodutorMusical {
     void tocar();
