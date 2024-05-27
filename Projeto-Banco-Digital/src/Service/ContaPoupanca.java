@@ -8,7 +8,7 @@ public class ContaPoupanca extends Conta {
 
     @Override
     public void imprimirExtrato() {
-        System.out.println("=== Extrato Service.Conta de Poupanca ===");
+        System.out.println("=== Extrato Conta de Poupanca ===");
         super.imprimirInformacoesComuns();
     }
 }

@@ -1,23 +1,24 @@
 package Principal;
 
-import Service.Cliente;
-import Service.Conta;
-import Service.ContaCorrente;
-import Service.ContaPoupanca;
+import Service.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Cliente venilton = new Cliente();
+        venilton.setNome("Wesley");
 
-        Cliente wesley = new Cliente();
-        wesley.setNome("Wesley");
+        Conta cc = new ContaCorrente(venilton);
+        Conta poupanca = new ContaPoupanca(venilton);
 
-        Conta contaCorrente = new ContaCorrente(wesley);
-        contaCorrente.depositar(100.0);
+        cc.depositar(100);
+        cc.transferir(100, poupanca);
 
-        Conta contaPoupanca = new ContaPoupanca(wesley);
-        contaCorrente.transferir(100.0, contaPoupanca);
-
-        contaCorrente.imprimirExtrato();
-        contaPoupanca.imprimirExtrato();
+        cc.imprimirExtrato();
+        poupanca.imprimirExtrato();
     }
 }
+
