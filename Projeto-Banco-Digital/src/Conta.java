@@ -1,3 +1,6 @@
+import lombok.Getter;
+
+@Getter
 public abstract class Conta implements IConta{
 
     private static final int AGENCIA_PADRAO = 1;
@@ -45,18 +48,6 @@ public abstract class Conta implements IConta{
         }
     }
 
-
-    public Integer getAgencia() {
-        return agencia;
-    }
-
-    public Integer getNumero() {
-        return numero;
-    }
-
-    public Double getSaldo() {
-        return saldo;
-    }
 
     protected void imprimirInformacoesComuns() {
         System.out.println("Titular: " + this.cliente.getNome());
