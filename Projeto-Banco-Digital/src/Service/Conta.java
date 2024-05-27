@@ -1,7 +1,9 @@
+package Service;
+
 import lombok.Getter;
 
 @Getter
-public abstract class Conta implements IConta{
+public abstract class Conta implements IConta {
 
     private static final int AGENCIA_PADRAO = 1;
 

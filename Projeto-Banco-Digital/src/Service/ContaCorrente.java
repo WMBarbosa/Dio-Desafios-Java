@@ -1,4 +1,6 @@
-public class ContaCorrente extends Conta{
+package Service;
+
+public class ContaCorrente extends Conta {
 
 
     public ContaCorrente(Cliente cliente) {
@@ -7,7 +9,7 @@ public class ContaCorrente extends Conta{
 
     @Override
     public void imprimirExtrato() {
-        System.out.println("=== Extrato Conta Corrente ===");
+        System.out.println("=== Extrato Service.Conta Corrente ===");
         super.imprimirInformacoesComuns();
     }
 
