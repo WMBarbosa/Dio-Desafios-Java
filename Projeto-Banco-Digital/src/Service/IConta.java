@@ -10,5 +10,4 @@ public interface IConta {
 
      void imprimirExtrato();
 
-     boolean encontrarConta(int numeroConta);
 }
