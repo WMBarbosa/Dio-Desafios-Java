@@ -23,6 +23,8 @@ public class Main {
         cc.imprimirExtrato();
         poupanca.imprimirExtrato();
 
+        banco.totalContas();
+
     }
 }
 

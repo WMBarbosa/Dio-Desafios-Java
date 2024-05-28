@@ -26,7 +26,7 @@ public class Banco {
         }
     }
 
-    public void tamanhoContas() {
+    public void totalContas() {
         System.out.println(contas.size());
     }
 
